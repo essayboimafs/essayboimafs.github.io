@@ -34,7 +34,7 @@ void setup(){
 }
 void draw(){
   numfill = 0;
-  nap(100000);
+  nap(10000000);
   background(255);
   lines();
   players[turn].play();
