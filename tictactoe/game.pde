@@ -6,12 +6,8 @@ void lines(){
   line(0, 300, 900, 300);
   line(0, 600, 900, 600);
 }
-void nap(int time){
-  int t = 0;
-  while(t<time){
-    t++;
-  }
-}
+int mil = 0;
+int millk = 0;
 player players[];
 int[][] board;
 int turn = 0;
@@ -34,7 +30,7 @@ void setup(){
 }
 void draw(){
   numfill = 0;
-  nap(10000000);
+  if(millis()-mil>1000){
   background(255);
   lines();
   players[turn].play();
@@ -75,10 +71,12 @@ void draw(){
     win=true;
   }
   if(done){
-    nap(500000);
+    if(mill()-millk>500){
     for(int i = 0;i<3;i++){
     for(int j = 0;j<3;j++){
       board[i][j] = 0;
+    }
+    millk = millis();
     }
   }
   players[0].trys = 0;
@@ -87,4 +85,6 @@ void draw(){
   win = false;
   done = false;
   }
+  mil = millis();
+}
 }
