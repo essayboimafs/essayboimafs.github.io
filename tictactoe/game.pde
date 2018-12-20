@@ -6,6 +6,12 @@ void lines(){
   line(0, 300, 900, 300);
   line(0, 600, 900, 600);
 }
+void nap(int time){
+  int t = 0;
+  while(t<time){
+    t++;
+  }
+}
 player players[];
 int[][] board;
 int turn = 0;
@@ -28,7 +34,7 @@ void setup(){
 }
 void draw(){
   numfill = 0;
-  delay(1000);
+  nap(1000);
   background(255);
   lines();
   players[turn].play();
@@ -69,7 +75,7 @@ void draw(){
     win=true;
   }
   if(done){
-    delay(500);
+    nap(500);
     for(int i = 0;i<3;i++){
     for(int j = 0;j<3;j++){
       board[i][j] = 0;
