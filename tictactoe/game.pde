@@ -70,20 +70,20 @@ void draw(){
     done = true;
     win=true;
   }
-  if(done){
+  while(done){
     if(mill()-millk>500){
     for(int i = 0;i<3;i++){
     for(int j = 0;j<3;j++){
       board[i][j] = 0;
     }
-    millk = millis();
     }
-  }
   players[0].trys = 0;
   players[1].trys = 0;
   turn = 0;
   win = false;
   done = false;
+  }
+  millk = millis();
   }
   mil = millis();
 }
