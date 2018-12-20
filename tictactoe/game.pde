@@ -34,7 +34,7 @@ void setup(){
 }
 void draw(){
   numfill = 0;
-  nap(1000);
+  nap(1000000000000);
   background(255);
   lines();
   players[turn].play();
@@ -75,7 +75,7 @@ void draw(){
     win=true;
   }
   if(done){
-    nap(500);
+    nap(50000000000000);
     for(int i = 0;i<3;i++){
     for(int j = 0;j<3;j++){
       board[i][j] = 0;
