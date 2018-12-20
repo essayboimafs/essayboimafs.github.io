@@ -71,7 +71,7 @@ void draw(){
     win=true;
   }
   while(done){
-    if(mill()-millk>500){
+    if(millis()-millk>500){
     for(int i = 0;i<3;i++){
     for(int j = 0;j<3;j++){
       board[i][j] = 0;
