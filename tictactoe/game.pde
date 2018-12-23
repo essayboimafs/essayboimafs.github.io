@@ -33,7 +33,7 @@ void setup(){
 }
 void draw(){
   numfill = 0;
-  delay(1000);
+  //delay(1000);
   background(255);
   lines();
   if(!doner){
@@ -142,7 +142,7 @@ void draw(){
 }
 else{
   if(done){
-    delay(500);
+    //delay(500);
     done = false;
     first = -10;
     for(int i = 0;i<3;i++){
