@@ -1,7 +1,7 @@
 let draw1 = true;
 function setup(){
 createCanvas(1000,1000);
-  console.log("hi");
+  console.log("hil");
   textAlign(CENTER, CENTER);
   textSize(20);
 }
