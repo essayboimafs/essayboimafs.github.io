@@ -1,7 +1,8 @@
 function setup(){
-createCanvas(400,400);
-  ellipse(200,200,40,40);
+createCanvas(1000,1000);
+  console.log("hi");
 }
 function draw(){
-
+  fill(255);
+ rect(100, 800, 800, 100);
 }
