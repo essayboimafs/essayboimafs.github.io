@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html>
 <head>
-<title>jujus twitch boi</title>
+<title>jujus twitch boy</title>
   <script src="p5.js"></script>
   <style>
 iframe {
@@ -12,6 +12,12 @@ iframe {
     border: 1px solid black;
 } 
 </style>
+  <script type="text/javascript">
+    function setBrowserFrameSource(){
+        var browserFrame = document.getElementById("chat_embed");
+        browserFrame.src= "twitch.tv"+document.getElementById("txtUrl").value;
+    }
+</script>
 </head>
 <body>
   <script src="whiteboard.js"></script>
@@ -22,5 +28,9 @@ iframe {
         height="500"
         width="350">
 </iframe>
+  <form method="post" target="browser">
+<input id="txtUrl" placeholder="Twitch name" name="url" type="text" />
+<input type="button" value="Submit" onclick="setBrowserFrameSource(); return false;"/>
+</form>
 </body>
 </html>
