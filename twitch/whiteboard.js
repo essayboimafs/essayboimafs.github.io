@@ -1,11 +1,7 @@
-function preload(){
-let font = loadFont('assets/SourceSansPro-Regular.otf');
-}
 function setup(){
 createCanvas(1000,1000);
   console.log("hi");
   textAlign(CENTER, CENTER);
-  textFont(font);
 }
 function draw(){
   fill(255,0,0);
