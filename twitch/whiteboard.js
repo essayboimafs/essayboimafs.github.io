@@ -1,6 +1,7 @@
+let draw1 = true;
 function setup(){
 createCanvas(1000,1000);
-  console.log("hi");
+  console.log("hil");
   textAlign(CENTER, CENTER);
   textSize(20);
 }
@@ -17,12 +18,18 @@ function draw(){
     ellipse(mouseX, mouseY, 10, 10);
   }
   if(mouseIsPressed&&mouseX<366&&mouseX>100&&mouseY<900&&mouseY>800){
-   fill(0);
+   draw1 = true;
   }
   if(mouseIsPressed&&mouseX<634&&mouseX>366&&mouseY<900&&mouseY>800){
-   fill(255);
+   draw1 = false;
   }
   if(mouseIsPressed&&mouseX<900&&mouseX>634&&mouseY<900&&mouseY>800){
    background(255);
+  }
+  if(draw1){
+    fill(0);
+  }
+  else{
+    fill(255);
   }
 }
