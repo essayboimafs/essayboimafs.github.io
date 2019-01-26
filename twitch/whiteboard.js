@@ -6,6 +6,7 @@ createCanvas(1000,1000);
   textSize(20);
 }
 function draw(){
+  stroke(0)
   fill(255,0,0);
  rect(100, 800, 800, 100);
   line(366, 900, 366, 800);
@@ -20,6 +21,7 @@ function draw(){
       ellipse(mouseX, mouseY, 10, 10);
   }
   else{
+     noStroke();
     fill(255);
     ellipse(mouseX, mouseY, 20, 20);
   }
