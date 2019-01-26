@@ -1,20 +1,17 @@
 <DOCTYPE html>
 <html>
 <head>
-<title>juju twitch boi</title>
+<title>jujus twitch boi</title>
   <script src="p5.js"></script>
 </head>
 <body>
   <script src="whiteboard.js"></script>
-  <iframe src="https://www.twitch.tv/milkyboi512">
-  </iframe>
-  <script>
-    var all = iframe.contentWindow.document.getElementsByClassName("*");
-for (var i=0, max=all.length; i < max; i++) {
-     if(all[i].className!="tw-flex tw-flex-column tw-flex-grow-1 tw-flex-nowrap tw-full-height tw-full-width tw-relative"){
-       all[i].style.display = "none";
-     }
-}
-  </script>
+  <iframe frameborder="0"
+        scrolling="no"
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/milkyboi512/chat"
+        height="500"
+        width="350">
+</iframe>
 </body>
 </html>
