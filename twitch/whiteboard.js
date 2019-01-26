@@ -1,6 +1,6 @@
 function setup(){
 createCanvas(1000,1000);
-  console.log("hi");
+  console.log("hil");
   textAlign(CENTER, CENTER);
   textSize(20);
 }
@@ -13,4 +13,7 @@ function draw(){
   text("Paint", 233, 850);
   text("Eraser", 500, 850);
   text("Clear", 767, 850);
+  if(mouseIsPressed){
+    ellipse(mouseX, mouseY, 40, 40);
+  }
 }
