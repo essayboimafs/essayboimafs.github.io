@@ -1,7 +1,7 @@
 let draw1 = true;
 function setup(){
 createCanvas(1000,1000);
-  console.log("hi");
+  console.log("hil");
   textAlign(CENTER, CENTER);
   textSize(20);
 }
@@ -23,9 +23,11 @@ function draw(){
       strokeWeight(1);
   }
   else{
-     noStroke();
-    fill(255);
-    ellipse(mouseX, mouseY, 20, 20);
+    stroke(255);
+    strokeWeight(20);
+      line(pmouseX, pmouseY, mouseX, mouseY);
+      strokeWeight(1);
+    stroke(0)
   }
   }
   if(mouseIsPressed&&mouseX<366&&mouseX>100&&mouseY<900&&mouseY>800){
