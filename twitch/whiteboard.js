@@ -11,6 +11,6 @@ function draw(){
   line(634, 900, 634, 800);
   fill(0);
   text("Paint", 233, 850);
-  text("Eraser", 1500, 850);
+  text("Eraser", 500, 850);
   text("Clear", 767, 850);
 }
