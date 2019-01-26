@@ -14,6 +14,6 @@ function draw(){
   text("Eraser", 500, 850);
   text("Clear", 767, 850);
   if(mouseIsPressed){
-    ellipse(mouseX, mouseY, 40, 40);
+    ellipse(mouseX, mouseY, 10, 10);
   }
 }
