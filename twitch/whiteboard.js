@@ -18,7 +18,9 @@ function draw(){
   if(mouseIsPressed){
     if(draw1){
     fill(0);
-      ellipse(mouseX, mouseY, 10, 10);
+      strokeWeight(10);
+      line(pmouseX, pmouseY, mouseX, mouseY);
+      strokeWeight(1);
   }
   else{
      noStroke();
