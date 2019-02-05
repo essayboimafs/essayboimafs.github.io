@@ -1,7 +1,7 @@
 let draw1 = true;
 function setup(){
 createCanvas(1000,1000);
-  console.log("hil");
+  console.log("hi");
   textAlign(CENTER, CENTER);
   textSize(20);
 }
@@ -17,7 +17,7 @@ function draw(){
   text("Clear", 767, 850);
   if(mouseIsPressed){
     if(draw1){
-    fill(0);
+    fill(mouseX/4, mouseY/4, 120);
       strokeWeight(10);
       line(pmouseX, pmouseY, mouseX, mouseY);
       strokeWeight(1);
