@@ -7,7 +7,7 @@ createCanvas(1000,1000);
   textAlign(CENTER, CENTER);
   textSize(20);
   input = createInput();
-  input.position(1100, 65);
+  input.position(1100, 600);
 
   button = createButton('submit');
   button.position(input.x + input.width, 65);
