@@ -8,7 +8,7 @@ createCanvas(1000,1000);
   textSize(20);
 }
 function draw(){
-    color = input1.value();
+    color = input1.value;
   stroke(0)
   fill(255,0,0);
  rect(100, 800, 800, 100);
@@ -42,3 +42,4 @@ function draw(){
   if(mouseIsPressed&&mouseX<900&&mouseX>634&&mouseY<900&&mouseY>800){
    background(255);
   }
+}
