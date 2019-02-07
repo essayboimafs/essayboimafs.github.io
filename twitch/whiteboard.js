@@ -25,7 +25,7 @@ function draw(){
   text("Clear", 767, 850);
   if(mouseIsPressed){
     if(draw1){
-    stroke(color[0].trim(), color[1].trim(), color[2].trim());
+    stroke(color[0], color[1], color[2]);
       strokeWeight(10);
       line(pmouseX, pmouseY, mouseX, mouseY);
       strokeWeight(1);
