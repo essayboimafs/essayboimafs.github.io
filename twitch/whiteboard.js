@@ -1,17 +1,14 @@
 let draw1 = true;
 let color = [0,0,0];
-let input = document.getElementById("color").value;
-let button;
+let input = document.getElementById("color");
 function setup(){
 createCanvas(1000,1000);
-  console.log("hi");
+  console.log("hil");
   textAlign(CENTER, CENTER);
   textSize(20);
-  button = createButton('submit');
-  button.position(input.x + input.width, 600);
-  button.mousePressed(greet);
 }
 function draw(){
+    color = input.value().split(",");
   stroke(0)
   fill(255,0,0);
  rect(100, 800, 800, 100);
@@ -45,8 +42,4 @@ function draw(){
   if(mouseIsPressed&&mouseX<900&&mouseX>634&&mouseY<900&&mouseY>800){
    background(255);
   }
-}
-function greet(){
-  color = input.value().split(",");
-  input.value('');
-}
+
