@@ -1,10 +1,17 @@
 let draw1 = true;
+let color = [0,0,0];
 let input, button;
 function setup(){
 createCanvas(1000,1000);
-  console.log("hil");
+  console.log("hi");
   textAlign(CENTER, CENTER);
   textSize(20);
+  input = createInput();
+  input.position(1100, 65);
+
+  button = createButton('submit');
+  button.position(input.x + input.width, 65);
+  button.mousePressed(greet);
 }
 function draw(){
   stroke(0)
@@ -18,7 +25,7 @@ function draw(){
   text("Clear", 767, 850);
   if(mouseIsPressed){
     if(draw1){
-    stroke(mouseX/4, mouseY/4, 120);
+    stroke(color[0].trim(), color[1].trim(), color[2].trim());
       strokeWeight(10);
       line(pmouseX, pmouseY, mouseX, mouseY);
       strokeWeight(1);
@@ -40,4 +47,8 @@ function draw(){
   if(mouseIsPressed&&mouseX<900&&mouseX>634&&mouseY<900&&mouseY>800){
    background(255);
   }
+}
+function greet(){
+  color = input.value().split(",");
+  input.value('');
 }
