@@ -1,6 +1,14 @@
 let draw1 = true;
-let color = [0,0,0];
+let color = "";
 let input1 = document.getElementById("color");
+function hexToRgb(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
 function setup(){
 createCanvas(1000,1000);
   console.log("hil");
@@ -21,7 +29,7 @@ function draw(){
   text("Clear", 767, 850);
   if(mouseIsPressed){
     if(draw1){
-    stroke(color[0], color[1], color[2]);
+    stroke(hexToRgb(color), hexToRgb(color), hexToRgb(color));
       strokeWeight(10);
       line(pmouseX, pmouseY, mouseX, mouseY);
       strokeWeight(1);
