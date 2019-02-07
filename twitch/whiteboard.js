@@ -3,12 +3,10 @@ let color = [0,0,0];
 let input, button;
 function setup(){
 createCanvas(1000,1000);
-  console.log("hil");
+  console.log("hi");
   textAlign(CENTER, CENTER);
   textSize(20);
-  input = createInput();
-  input.position(1100, 600);
-input.type("color");
+  input = document.getElementByID("color");
   button = createButton('submit');
   button.position(input.x + input.width, 600);
   button.mousePressed(greet);
