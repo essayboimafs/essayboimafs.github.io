@@ -1,4 +1,5 @@
 let draw1 = true;
+let input, button;
 function setup(){
 createCanvas(1000,1000);
   console.log("hil");
