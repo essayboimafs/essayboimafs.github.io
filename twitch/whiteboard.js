@@ -1,6 +1,6 @@
 let draw1 = true;
 let color = [0,0,0];
-let input = document.getElementById("color").value;
+//let input = document.getElementById("color").value;
 function setup(){
 createCanvas(1000,1000);
   console.log("hi");
