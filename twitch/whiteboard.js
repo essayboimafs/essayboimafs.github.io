@@ -1,12 +1,11 @@
 let draw1 = true;
 let color = [0,0,0];
-let input, button;
+let input = document.getElementById("color").value, button;
 function setup(){
 createCanvas(1000,1000);
-  console.log("hi");
+  console.log("hil");
   textAlign(CENTER, CENTER);
   textSize(20);
-  input = document.getElementByID("color");
   button = createButton('submit');
   button.position(input.x + input.width, 600);
   button.mousePressed(greet);
