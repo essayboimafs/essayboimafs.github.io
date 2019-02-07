@@ -3,11 +3,12 @@ let color = [0,0,0];
 let input1 = document.getElementById("color");
 function setup(){
 createCanvas(1000,1000);
-  console.log("hi");
+  console.log("hil");
   textAlign(CENTER, CENTER);
   textSize(20);
 }
 function draw(){
+  input1 = document.getElementById("color");
     color = input1.value;
   stroke(0)
   fill(255,0,0);
