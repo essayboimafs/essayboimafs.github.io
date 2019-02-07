@@ -10,7 +10,7 @@ createCanvas(1000,1000);
   input.position(1100, 600);
 
   button = createButton('submit');
-  button.position(input.x + input.width, 65);
+  button.position(input.x + input.width, 600);
   button.mousePressed(greet);
 }
 function draw(){
