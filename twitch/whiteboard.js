@@ -29,7 +29,7 @@ function draw(){
   text("Clear", 767, 850);
   if(mouseIsPressed){
     if(draw1){
-    stroke(hexToRgb(color), hexToRgb(color), hexToRgb(color));
+    stroke(hexToRgb(color).r, hexToRgb(color).g, hexToRgb(color).b);
       strokeWeight(10);
       line(pmouseX, pmouseY, mouseX, mouseY);
       strokeWeight(1);
