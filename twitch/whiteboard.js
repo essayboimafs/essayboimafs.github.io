@@ -1,6 +1,6 @@
 let draw1 = true;
 let color = [0,0,0];
-//let input = document.getElementById("color").value;
+let input = document.getElementById("color");
 function setup(){
 createCanvas(1000,1000);
   console.log("hi");
@@ -8,7 +8,7 @@ createCanvas(1000,1000);
   textSize(20);
 }
 function draw(){
-    color = input;
+    color = input.value;
   stroke(0)
   fill(255,0,0);
  rect(100, 800, 800, 100);
@@ -42,4 +42,3 @@ function draw(){
   if(mouseIsPressed&&mouseX<900&&mouseX>634&&mouseY<900&&mouseY>800){
    background(255);
   }
-
